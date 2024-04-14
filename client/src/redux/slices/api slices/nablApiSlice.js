@@ -9,12 +9,14 @@ export const nablApiSlice = apiSlice.injectEndpoints({
         url: `${NABL_URL}/createSample`,
         method: "POST",
         body: data,
+        credentials: 'include',
       }),
     }),
     getSamples: builder.mutation({
       query: () => ({
         url: `${NABL_URL}/getSamples`,
         method: "GET",
+        credentials: 'include',
       }),
     }),
     updateSample: builder.mutation({
@@ -22,6 +24,7 @@ export const nablApiSlice = apiSlice.injectEndpoints({
         url: `${NABL_URL}/updateSample`,
         method: "PUT",
         body: data,
+        credentials: 'include',
       }),
     }),
     createReport: builder.mutation({
@@ -29,12 +32,14 @@ export const nablApiSlice = apiSlice.injectEndpoints({
         url: `${NABL_URL}/createReport`,
         method: "POST",
         body: data,
+        credentials: 'include',
       }),
     }),
     getReports: builder.mutation({
       query: () => ({
         url: `${NABL_URL}/getReports`,
         method: "GET",
+        credentials: 'include',
       }),
     }),
     updateReport: builder.mutation({
@@ -42,6 +47,7 @@ export const nablApiSlice = apiSlice.injectEndpoints({
         url: `${NABL_URL}/updateReport`,
         method: "PUT",
         body: data,
+        credentials: 'include',
       }),
     }),
     authoriseReport: builder.mutation({
@@ -55,6 +61,7 @@ export const nablApiSlice = apiSlice.injectEndpoints({
       query: () => ({
         url: `${NABL_URL}/getNablData`,
         method: "GET",
+        credentials: 'include',
       }),
     }),
     updateNablData: builder.mutation({
@@ -62,6 +69,7 @@ export const nablApiSlice = apiSlice.injectEndpoints({
         url: `${NABL_URL}/updateNablData`,
         method: "PUT",
         body: data,
+        credentials: 'include',
       }),
     }),
     createParam: builder.mutation({
@@ -69,12 +77,14 @@ export const nablApiSlice = apiSlice.injectEndpoints({
         url: `${NABL_URL}/createParam`,
         method: "POST",
         body: data,
+        credentials: 'include',
       }),
     }),
     getParams: builder.mutation({
       query: () => ({
         url: `${NABL_URL}/getParams`,
         method: "GET",
+        credentials: 'include',
       }),
     }),
     updateParam: builder.mutation({
@@ -82,6 +92,7 @@ export const nablApiSlice = apiSlice.injectEndpoints({
         url: `${NABL_URL}/updateParam`,
         method: "PUT",
         body: data,
+        credentials: 'include',
       }),
     }),
     createParamSet: builder.mutation({
@@ -89,6 +100,7 @@ export const nablApiSlice = apiSlice.injectEndpoints({
         url: `${NABL_URL}/createParamSet`,
         method: "POST",
         body: data,
+        credentials: 'include',
       }),
     }),
   }),
