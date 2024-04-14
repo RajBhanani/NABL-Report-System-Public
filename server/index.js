@@ -18,7 +18,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://nabldemo.netlify.app/",
+    origin: "https://nabldemo.netlify.app",
     methods: "GET, POST",
     credentials: true,
   })
