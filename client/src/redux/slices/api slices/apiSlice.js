@@ -4,6 +4,7 @@ const baseQuery = fetchBaseQuery({ baseUrl: "/api" });
 
 export const apiSlice = createApi({
   baseQuery,
+  credentials: "include",
   tagTypes: ["User"],
   endpoints: (builder) => ({}) 
 });
