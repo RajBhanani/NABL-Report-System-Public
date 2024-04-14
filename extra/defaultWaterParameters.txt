@@ -1,0 +1,16 @@
+1)
+paramName: pH
+paramUnit: -
+paramTestMethod: IS-3025 (part-11)
+
+2)
+paramName: EC
+paramUnit: μs/cm
+paramTestMethod: IS-3025 (part-14)
+
+3)
+paramName: TDS
+paramUnit: mg/L
+paramTestMethod: IS-3025 (part-16)
+paramFormula: ((DryWt - EmptyWt) * 1000000) / Vol
+paramVariables: DryWt, EmptyWt, Vol

@@ -1,0 +1,88 @@
+1)
+paramName: pH
+paramUnit: -
+paramTestMethod: IS-2720 (part-26)
+
+2)
+paramName: EC
+paramUnit: dS/m
+paramTestMethod: IS-14767
+paramFormula: EC / 1000
+paramVariables: EC
+
+3)
+paramName: Organic Carbon
+paramUnit: %
+paramTestMethod: Ref. test method from Manual of Soil, Plant, & Water analysis published by West Wille Publish House - New Delhi IARI
+paramFormula: ((Blank - BR) * 3)/Blank
+paramVariables: Blank, BR
+
+4)
+paramName: Available Nitrogen
+paramUnit: Kg/ha
+paramTestMethod: Ref. test method from Manual of Soil, Plant, & Water analysis published by West Wille Publish House - New Delhi IARI
+paramFormula: (BR - Blank) * Normality * 6276.48
+paramVariables: BR, Blank, Normality
+
+5)
+paramName: Available Phosphorus 
+paramUnit: Kg/ha
+paramTestMethod: Ref. test method from Manual of Soil, Plant, & Water analysis published by West Wille Publish House - New Delhi IARI
+paramFormula: (Abs / GF) * 20.5184
+paramVariables: Abs, GF
+
+6)
+paramName: Available Sulphur
+paramUnit: ppm
+paramTestMethod: Ref. test method from Manual of Soil, Plant, & Water analysis published by West Wille Publish House - New Delhi IARI
+paramFormula: (Abs / GF) / 2
+paramVariables: Abs, GF
+
+7)
+paramName: Available Potassium
+paramUnit: Kg/ha
+paramTestMethod: Ref. test method from Manual of Soil, Plant, & Water analysis published by West Wille Publish House - New Delhi IARI
+paramFormula: (BR - Blank) * 26.88
+paramVariables: BR, Blank
+
+8)
+paramName: Available Calcium
+paramUnit: %
+paramTestMethod: Ref. test method from Manual of Soil, Plant, & Water analysis published by West Wille Publish House - New Delhi IARI
+paramFormula: BR * Normality * 4
+paramVariables: BR, Normality
+
+9)
+paramName: Available Magnesium
+paramUnit: %
+paramTestMethod: Ref. test method from Manual of Soil, Plant, & Water analysis published by West Wille Publish House - New Delhi IARI
+paramFormula :BR * Normality * 2.4
+paramVariables: BR, Normality
+
+10)
+paramName: Available Iron
+paramUnit: mg/kg
+paramTestMethod: Available Micronutrient (Fe, Cu, Mn, Zn) from soil. Ref. method Manual of Soil Testing in India, Department of Agriculture and Cooperation Ministry of Agriculture, Govt. of India, New Delhi, Jan - 2011
+paramFormula: (BR - Blank) * 2
+paramVariables: BR, Blank
+
+11)
+paramName: Available Manganese
+paramUnit: mg/kg
+paramTestMethod: Available Micronutrient (Fe, Cu, Mn, Zn) from soil. Ref. method Manual of Soil Testing in India, Department of Agriculture and Cooperation Ministry of Agriculture, Govt. of India, New Delhi, Jan - 2011
+paramFormula :(BR - Blank) * 2
+paramVariables: BR, Blank
+
+12)
+paramName: Available Zinc
+paramUnit: mg/kg
+paramTestMethod: Available Micronutrient (Fe, Cu, Mn, Zn) from soil. Ref. method Manual of Soil Testing in India, Department of Agriculture and Cooperation Ministry of Agriculture, Govt. of India, New Delhi, Jan - 2011
+paramFormula: (BR - Blank) * 2
+paramVariables: BR, Blank
+
+13)
+paramName: Available Copper
+paramUnit: mg/kg
+paramTestMethod: Available Micronutrient (Fe, Cu, Mn, Zn) from soil. Ref. method Manual of Soil Testing in India, Department of Agriculture and Cooperation Ministry of Agriculture, Govt. of India, New Delhi, Jan - 2011
+paramFormula: (BR - Blank) * 2
+paramVariables: BR, Blank
