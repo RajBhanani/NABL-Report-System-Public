@@ -9,6 +9,7 @@ export const adminApiSlice = apiSlice.injectEndpoints({
       query: () => ({
         url: `${ADMIN_URL}/verify`,
         method: "GET",
+        credentials: 'include',
       }),
     }),
   }),
