@@ -19,7 +19,7 @@ const app = express();
 app.use(
   cors({
     origin: "https://nabldemo.netlify.app",
-    methods: "GET, POST",
+    methods: "GET, POST, PUT",
     credentials: true,
   })
 );
