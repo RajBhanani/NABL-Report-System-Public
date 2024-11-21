@@ -36,11 +36,10 @@ export const userLogin = expressAsyncHandler(async (request, response) => {
 // POST /logout
 // Public
 export const userLogout = expressAsyncHandler(async (request, response) => {
-  response.cookie("token", "", {
-    httpOnly: true,
-    expires: new Date(0),
-    sameSite: "strict",
-  });
+  response.setHeader(
+    "Set-Cookie",
+    `token=; Expires=${new Date(0)}; Max-Age=0; HttpOnly; Secure; SameSite=None; Path=/; Partitioned;`
+  );
   response.status(200).json({ message: "User logged out" });
 });
 
