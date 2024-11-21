@@ -55,6 +55,7 @@ export const nablApiSlice = apiSlice.injectEndpoints({
         url: `${NABL_URL}/authoriseReport`,
         method: "PUT",
         body: data,
+        credentials: 'include',
       }),
     }),
     getNablData: builder.mutation({
