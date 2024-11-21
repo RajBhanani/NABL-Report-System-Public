@@ -11,6 +11,7 @@ const generateToken = async (res, userId, userRole) => {
     secure: process.env.NODE_ENV === "production",
     sameSite: "none",
     maxAge: sessionHours * 60 * 60 * 1000,
+    partitioned: true,
   });
 };
 
