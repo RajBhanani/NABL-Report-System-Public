@@ -6,13 +6,12 @@ const generateToken = async (res, userId, userRole) => {
   const token = jwt.sign({ userId, userRole }, process.env.JWT_SECRET, {
     expiresIn: sessionHours * 60 * 60 * 1000,
   });
-  res.cookie("token", token, {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "none",
-    maxAge: sessionHours * 60 * 60 * 1000,
-    partitioned: true,
-  });
+  res.setHeader(
+    "Set-Cookie",
+    `token=${token}; HttpOnly; Secure; SameSite=None; Path=/; Max-Age=${
+      sessionHours * 60 * 60
+    }; Partitioned;`
+  );
 };
 
 export default generateToken;
